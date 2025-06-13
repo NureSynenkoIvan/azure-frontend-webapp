@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/244d7901-de0d-4661-bdb0-75ca982fd553/resourceGroups/Rhz_Labs/providers/Microsoft.Web/sites/chat-frontend",
+    "appService.deploySubpath": "."
+}
