@@ -7,7 +7,7 @@ function Login({ onLoginSuccess }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate(); 
-  const backendUrl = "192.168.56.1:8080"
+  const backendUrl = "https://synenko-chat.azurewebsites.net/"
 
   const backendEndpoint = backendUrl+'/auth';
 

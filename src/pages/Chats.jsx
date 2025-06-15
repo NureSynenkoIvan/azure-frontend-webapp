@@ -13,7 +13,7 @@ function Chats() {
     const [newChatType, setNewChatType] = useState('direct'); 
 
     const username = localStorage.getItem('username');
-    const backendUrl = "192.168.56.1:8080";
+    const backendUrl = "https://synenko-chat.azurewebsites.net/";
 
      const navigate = useNavigate(); 
       const handleChatClick = (chatId) => {
