@@ -10,7 +10,7 @@ function ChatRoom() {
     const [newMessage, setNewMessage] = useState(''); 
     
     const currentUserId = localStorage.getItem('userid') 
-    const backendUrl = "https://synenko-chat.azurewebsites.net/";
+    const backendUrl = "https://synenko-chat.azurewebsites.net";
 
     useEffect(() => {
         const fetchMessages = async () => {

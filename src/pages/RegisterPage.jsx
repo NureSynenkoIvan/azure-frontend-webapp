@@ -10,7 +10,7 @@ export default function RegisterPage() {
   const [bio, setBio] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
-  const api = "https://synenko-chat.azurewebsites.net/"
+  const api = "https://synenko-chat.azurewebsites.net"
 
   const handleSubmit = async (e) => {
     e.preventDefault();

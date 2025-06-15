@@ -7,7 +7,7 @@ function Login({ onLoginSuccess }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate(); 
-  const backendUrl = "https://synenko-chat.azurewebsites.net/"
+  const backendUrl = "https://synenko-chat.azurewebsites.net"
 
   const backendEndpoint = backendUrl+'/auth';
 
@@ -18,7 +18,7 @@ function Login({ onLoginSuccess }) {
     const credentials = btoa(`${phoneNumber}:${password}`); 
 
     try {
-      const response = await fetch(`${backendEndpoint}?userName=${phoneNumber}&password=${password}`, {
+      const response = await fetch(`${backendEndpoint}?username=${phoneNumber}&password=${password}`, {
         method: 'GET',
         headers: {
           'Authorization': `Basic ${credentials}`,
