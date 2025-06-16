@@ -28,6 +28,7 @@ function Chats() {
             const phone = localStorage.getItem('username');
             const password = localStorage.getItem('password');
             const credentials = btoa(`${phone}:${password}`);
+            alert(`${phone}:${password}`)
             setUserId("1111112")
           
 
